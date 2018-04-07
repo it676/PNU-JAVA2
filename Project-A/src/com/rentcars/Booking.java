@@ -71,6 +71,11 @@ public abstract class Booking implements Payable {
 
     System.out.println("Customer Name: "+customer.getName());
     System.out.println("Customer Phone No: "+customer.getPhone());
+
+        System.out.println("Car Model : "+car.getModel());
+        System.out.println("Car Color : "+car.getColor());
+
+
     if(this instanceof  VIPBooking)
         System.out.println("Address : "+((VIPBooking)this).getAddress());
 
