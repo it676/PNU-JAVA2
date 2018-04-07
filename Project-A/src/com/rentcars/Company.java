@@ -44,9 +44,10 @@ public class Company {
         for(Booking b : bookings){
 
             if(b.getId() == bookingID) {
+                
+                b.getCar().setAvailable(true);//now car is available
                 bookings.remove(b);
 
-                b.getCar().setAvailable(true);//now car is available
                 updateAndSaveCarsInfo();//update data into the file
 
 
