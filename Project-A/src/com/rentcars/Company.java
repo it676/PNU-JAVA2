@@ -28,7 +28,11 @@ public class Company {
     public boolean isCarAvailable(int index){
 
         if(index < 0 || index >=10)
-            throw  new ArrayIndexOutOfBoundsException("Invalid Car Numebr !");
+            throw  new ArrayIndexOutOfBoundsException("Invalid Car Number !");
+
+        if(cars[index] ==null)
+            return false;
+
         return cars[index].isAvailable();
     }
 
