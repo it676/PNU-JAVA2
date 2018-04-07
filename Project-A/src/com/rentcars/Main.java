@@ -53,7 +53,7 @@ public class Main {
                         int availableCars = company.displayAvailableCars();
                         if( availableCars > 0) {
 
-                            System.out.print("Select Your Cars >> ");
+                            System.out.print("Select Your Car >> ");
                             int selectedCar = input.nextInt();
                             if (!company.isCarAvailable(selectedCar))
                                 System.out.println("Sorry , car is not available");
@@ -154,6 +154,11 @@ public class Main {
             catch (IOException ex){
 
                 System.err.println("Error : Can't read the data from the file");
+            }
+
+            catch (ArrayIndexOutOfBoundsException ex){
+
+                System.err.println("Error : Invalid Car Choice !");
             }
 
         }while (userChoice !=5);

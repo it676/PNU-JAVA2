@@ -27,6 +27,8 @@ public class Company {
 
     public boolean isCarAvailable(int index){
 
+        if(index < 0 || index >=10)
+            throw  new ArrayIndexOutOfBoundsException("Invalid Car Numebr !");
         return cars[index].isAvailable();
     }
 
@@ -44,7 +46,7 @@ public class Company {
         for(Booking b : bookings){
 
             if(b.getId() == bookingID) {
-                
+
                 b.getCar().setAvailable(true);//now car is available
                 bookings.remove(b);
 
