@@ -58,7 +58,7 @@ public class Main {
                             if (!company.isCarAvailable(selectedCar))
                                 System.out.println("Sorry , car is not available");
                             else {
-                                if (selectedCar < 0 || selectedCar > availableCars) {
+                                if (selectedCar < 0 ) {
 
                                     System.out.println("Invalid car choice !");
                                 } else {
