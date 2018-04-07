@@ -127,6 +127,19 @@ public class Main {
 
                         company.returnCar(bookingId);
                         break;
+
+                    case 4:
+                        System.out.print("Enter Booking Id : ");
+                        bookingId = input.nextLong();
+
+                        if(company.cancelBooking(bookingId))
+                            System.out.println("Booking has been cancelled !");
+                        else
+                            System.out.println("something wrong happened , check Booking id please");
+                        break;
+
+                    case 5:
+
                 }
             }
             catch (InputMismatchException ex){
