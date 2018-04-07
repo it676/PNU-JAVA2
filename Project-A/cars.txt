@@ -1,0 +1,1 @@
+992424,BMW,Black,1900.0,true,897642,BMW,Blue,1300.0,true,747345,Charger,White,1600.0,true,927634,Lexus,White,1300.0,true,
